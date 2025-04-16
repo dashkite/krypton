@@ -1,4 +1,5 @@
 import * as Fn from "@dashkite/joy/function"
+import * as Time from "@dashkite/joy/time"
 import * as DOM from "@dashkite/dominator"
 
 import Page from "./helpers/page"
@@ -26,17 +27,10 @@ Krypton =
 
   show: Fn.tee ( context ) ->
     do ({ render, page, view } = context ) ->
-      performance.mark "render-start"
-      await DOM.render "body", render context
+      await DOM.morph "body", render context
       view.html = DOM.html View.selector view
-      performance.mark "render-finish"
-      measure = performance.measure "render", 
-        "render-start", "render-finish"
-      console.log "%ckrypton: 
-        rendered view in
-        #{ Math.round measure.duration }ms",
-        "color: cyan;"
       view.initialized = true
+
 
   event: ( name, handler ) ->
     Fn.tee ({ initializing, view }) ->
