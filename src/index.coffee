@@ -27,7 +27,7 @@ Krypton =
 
   show: Fn.tee ( context ) ->
     do ({ render, page, view } = context ) ->
-      await DOM.morph "body", render context
+      await DOM.flash "body", render context
       view.html = DOM.html View.selector view
       view.initialized = true
 
@@ -45,7 +45,7 @@ Krypton =
 
   dispose: Fn.tee ({ view, page, initializing }) ->
     if !view.initialized
-      DOM.deactivate ( View.selector view ), ->
+      DOM.hide ( View.selector view ), ->
         Page.remove page, view
 
 export default Krypton
