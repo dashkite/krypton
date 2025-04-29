@@ -5,11 +5,6 @@ import * as DOM from "@dashkite/dominator"
 import Page from "./helpers/page"
 import View from "./helpers/view"
 
-# TODO optimize event handling
-#      we can handle events at the page level
-#      allowing us to us Fn.once instead of
-#      checking an initialization flag, but
-#      we need a similar trick for deactivate
 
 Krypton =
 
