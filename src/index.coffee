@@ -9,12 +9,13 @@ import View from "./helpers/view"
 Krypton =
 
   page: ( render ) ->
-    ({ data, url, bindings }) ->
+    ({ data, url, bindings, context... }) ->
       name = data.name
       target = url.pathname + url.search
       page = Page.get name
       view = View.get page, target
       context = {
+        context...
         name, data, url, target, bindings, render,
         page, view, pages: Page.list
       }
