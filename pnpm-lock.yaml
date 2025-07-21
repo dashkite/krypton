@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@dashkite/dominator':
-        specifier: link:../dominator
-        version: link:../dominator
+        specifier: 0.1.0
+        version: 0.1.0
       '@dashkite/joy':
         specifier: 0.11.0
         version: 0.11.0
@@ -595,6 +595,18 @@ packages:
   '@dashkite/assert@0.1.4':
     resolution: {integrity: sha512-OLOzI/lA+EwCh6znSexGAG1V4bkaT5gU04xl6ApEluv5jICnHhinZ707MObu+jhVVJ9uHDDlG85O+Afn1aTQoQ==}
 
+  '@dashkite/dominator@0.1.0':
+    resolution: {integrity: sha512-jSxv9CyVDNRdCJMssB4Nzzl4yoUnPxCaOcgls5lsMEBIB4afbZUDXRM2hvp7ZO70Rr4vlGtDz6JJBhgiIW3BeA==}
+
+  '@dashkite/flashdom@0.1.0':
+    resolution: {integrity: sha512-+bD3TRss88kn25zNHE8Ab3oamcwLJgFo2k+foQ7obo7bYP5xLeUHV+v585J76p3SsVOnzbT0d2rO+XU6DCRi3Q==}
+
+  '@dashkite/generic@0.5.0':
+    resolution: {integrity: sha512-XGLML0mHLgRKVprGgIUJS7EM7x0kMZGcQsvhGcZNfd1jl+zrWESgExxzU0O/KGbD7YOXJEhJ4aYoO0ZPBmqELg==}
+
+  '@dashkite/generic@0.9.0':
+    resolution: {integrity: sha512-Ho2pDNAEbO3WQFvZiPkhaaT2szgQKRWLXXwXgSzPjoVgmiVAptTWwsEmjDOWBtp254ZNhwk+F7jYpk+ZcJvyLQ==}
+
   '@dashkite/genie-clean@0.13.0':
     resolution: {integrity: sha512-Us9Qq1caInt5n8+ttWrBXb+glGKzUfRW1IRFiFhPycwsnHmNajEN437euA1DZ6/0FT6lNxdcnfOYbHhIDAkqBg==}
 
@@ -614,6 +626,9 @@ packages:
 
   '@dashkite/joy@0.3.16':
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
+
+  '@dashkite/joy@0.5.0':
+    resolution: {integrity: sha512-kaDNKKS6v5r3vukOkh54aarrhiTHwbcKZZW8eDav5FhT6u8RRrmSaFeAbwLzGntdPScaEhqg/PLrvtPHOy9OlQ==}
 
   '@dashkite/joy@0.7.0':
     resolution: {integrity: sha512-1sldJtFRJJwwm1yb2vrhUNvs9ns30ROS5E7KwBTkJ+yPVNsbgIFbakYn7AQSaEsLs/ZdqbHW7dWx+Wo/uG4D7w==}
@@ -890,6 +905,9 @@ packages:
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
+
+  diffhtml@1.0.0-beta.20:
+    resolution: {integrity: sha512-xSSwGb2dkQsTc7Bl910iySH65PkzsCtowfVGMfrmc2fEwvYrhJUpIEIx+3mpZ1wMWVt+t/0ltVwrjQkMJotxLg==}
 
   doctrine@3.0.0:
     resolution: {integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==}
@@ -2105,6 +2123,26 @@ snapshots:
     dependencies:
       '@dashkite/joy': 0.3.16
 
+  '@dashkite/dominator@0.1.0':
+    dependencies:
+      '@dashkite/flashdom': 0.1.0
+      '@dashkite/generic': 0.5.0
+      '@dashkite/joy': 0.7.0
+      diffhtml: 1.0.0-beta.20
+
+  '@dashkite/flashdom@0.1.0':
+    dependencies:
+      '@dashkite/generic': 0.9.0
+      '@dashkite/joy': 0.11.0
+
+  '@dashkite/generic@0.5.0':
+    dependencies:
+      '@dashkite/joy': 0.5.0
+
+  '@dashkite/generic@0.9.0':
+    dependencies:
+      '@dashkite/joy': 0.7.0
+
   '@dashkite/genie-clean@0.13.0':
     dependencies:
       '@dashkite/masonry': 0.21.0
@@ -2145,6 +2183,8 @@ snapshots:
   '@dashkite/joy@0.11.0': {}
 
   '@dashkite/joy@0.3.16': {}
+
+  '@dashkite/joy@0.5.0': {}
 
   '@dashkite/joy@0.7.0': {}
 
@@ -2417,6 +2457,8 @@ snapshots:
       ms: 2.1.3
 
   deep-is@0.1.4: {}
+
+  diffhtml@1.0.0-beta.20: {}
 
   doctrine@3.0.0:
     dependencies:

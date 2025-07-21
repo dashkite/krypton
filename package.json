@@ -41,7 +41,7 @@
     "@dashkite/genie-release": "^0.2.14"
   },
   "dependencies": {
-    "@dashkite/dominator": "link:../dominator",
+    "@dashkite/dominator": "0.1.0",
     "@dashkite/joy": "0.11.0"
   }
 }
