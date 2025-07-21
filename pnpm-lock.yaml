@@ -12,8 +12,8 @@ importers:
         specifier: link:../dominator
         version: link:../dominator
       '@dashkite/joy':
-        specifier: link:../joy
-        version: link:../joy
+        specifier: 0.11.0
+        version: 0.11.0
     devDependencies:
       '@dashkite/amen':
         specifier: ^0.2.2
@@ -50,6 +50,9 @@ packages:
 
   '@dashkite/genie-release@0.2.14':
     resolution: {integrity: sha512-nCl/031ZlxwIXC6ThX7xv1HBKo4GVxesKU2d3PcWDrXe7heXGC7bjmxmS3ZVqhH9zXV7T+bDOsDWOOUMH2wciA==}
+
+  '@dashkite/joy@0.11.0':
+    resolution: {integrity: sha512-smTbfUK2CZGxKjTs5ZSTXYp8sC9vYUERA4NIN3Q4ArP8fiXpdJg3rA1tctd70ATHLB46Idac9AQ/g2KnNddrbQ==}
 
   '@dashkite/joy@0.3.16':
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
@@ -111,6 +114,8 @@ snapshots:
     dependencies:
       '@dashkite/zephyr': 0.12.1
       zx: 8.7.1
+
+  '@dashkite/joy@0.11.0': {}
 
   '@dashkite/joy@0.3.16': {}
 

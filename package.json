@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "@dashkite/dominator": "link:../dominator",
-    "@dashkite/joy": "link:../joy"
+    "@dashkite/joy": "0.11.0"
   }
 }
