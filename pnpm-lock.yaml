@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@dashkite/dominator':
-        specifier: ^0.1.6
-        version: 0.1.6
+        specifier: ^0.1.7
+        version: 0.1.7
       '@dashkite/joy':
         specifier: ^0.11.0
         version: 0.11.0
@@ -595,8 +595,8 @@ packages:
   '@dashkite/assert@0.1.4':
     resolution: {integrity: sha512-OLOzI/lA+EwCh6znSexGAG1V4bkaT5gU04xl6ApEluv5jICnHhinZ707MObu+jhVVJ9uHDDlG85O+Afn1aTQoQ==}
 
-  '@dashkite/dominator@0.1.6':
-    resolution: {integrity: sha512-fZ4MULuHF4UEuZaT/qkPK3BTxVacfYLUgUDARYT2loqtmnMaMzrzIP9XQDavh22FUcelNRsdKIuyUC9S2f4kig==}
+  '@dashkite/dominator@0.1.7':
+    resolution: {integrity: sha512-miWF72rsSuhbofHKuQKYaGlqo6sPcN4WCYPAYRPMIRgmZjHco0gcx5839tSDE5EzcxvFgRaxNU60pdSVz0V8Sg==}
 
   '@dashkite/flashdom@0.1.6':
     resolution: {integrity: sha512-a9exAw7nS1nQWQorPNFUAmds5lrRCsTjJBE93dzLWOpQFn5dchcpaBUhbPMAiRR59nc7eN8aoVAFajk24PcXVg==}
@@ -2139,7 +2139,7 @@ snapshots:
     dependencies:
       '@dashkite/joy': 0.3.16
 
-  '@dashkite/dominator@0.1.6':
+  '@dashkite/dominator@0.1.7':
     dependencies:
       '@dashkite/flashdom': 0.1.6
       '@dashkite/generic': 0.5.0
