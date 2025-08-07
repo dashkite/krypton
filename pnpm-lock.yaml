@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@dashkite/dominator':
-        specifier: ^0.1.11
-        version: 0.1.11
+        specifier: ^0.1.12
+        version: 0.1.12
       '@dashkite/joy':
         specifier: ^0.11.0
         version: 0.11.0
@@ -595,17 +595,17 @@ packages:
   '@dashkite/assert@0.1.4':
     resolution: {integrity: sha512-OLOzI/lA+EwCh6znSexGAG1V4bkaT5gU04xl6ApEluv5jICnHhinZ707MObu+jhVVJ9uHDDlG85O+Afn1aTQoQ==}
 
-  '@dashkite/dominator@0.1.11':
-    resolution: {integrity: sha512-uO3q266B5OA+9ub7rZqEseKcsZtPiOkLfpzliM8maj7+vh6YzFYz6pJUpJ2PsPP9pS0eu3clpToPCBjzAi5kkQ==}
+  '@dashkite/dominator@0.1.12':
+    resolution: {integrity: sha512-NynKnCAGW2CItt4i7EE8feAW0OS/9x+1yEk9x6n6RaOyUsTTyZWWPsFRpKiy5P+/wZDs02KuJrDhB358qdQCnQ==}
 
-  '@dashkite/flashdom@0.1.9':
-    resolution: {integrity: sha512-/KPo7KSv0F8CJ7VwHRqqj3IROSoMlTQmn53UcYnN8j45iJlRDwmk8J/vr2PHMyQX1BSbFV51OYqobLeT/nfAnQ==}
+  '@dashkite/flashdom@0.1.10':
+    resolution: {integrity: sha512-ylHPvXl48BKl/xu2lVbao9RyHKELbX+n2AoveH0KRz65llufIAmh7GupWiefaskX61/gilBY6q/N6tB37nhXKw==}
 
   '@dashkite/generic@0.5.0':
     resolution: {integrity: sha512-XGLML0mHLgRKVprGgIUJS7EM7x0kMZGcQsvhGcZNfd1jl+zrWESgExxzU0O/KGbD7YOXJEhJ4aYoO0ZPBmqELg==}
 
-  '@dashkite/generic@0.9.7':
-    resolution: {integrity: sha512-k6P+4GNiCqlRWeWGKNPKvghl0xbY9Fh2HVBdFBkox5pWX574Wl+TaHmeVpskv0eHUh66SBMtdaxM0uaZgDUtXw==}
+  '@dashkite/generic@0.9.8':
+    resolution: {integrity: sha512-7Hc6Rs59Ozj3uTK6kt1EBgiYbh50rmY7e41IOAxpcvlHoaWUOYSFMflhQ5YWevSOXJtXiwCwr/NLTcYpV+iGJg==}
 
   '@dashkite/genie-clean@0.13.8':
     resolution: {integrity: sha512-8tMLVyCEM9poQSHvpzfqXMHUi0OJl/6Xn1ssQ/bzFW4jFif3LCEsBbAvuU/3qYwtZI81ZZC0N5p4ioHx4BCMsg==}
@@ -2139,23 +2139,23 @@ snapshots:
     dependencies:
       '@dashkite/joy': 0.3.16
 
-  '@dashkite/dominator@0.1.11':
+  '@dashkite/dominator@0.1.12':
     dependencies:
-      '@dashkite/flashdom': 0.1.9
+      '@dashkite/flashdom': 0.1.10
       '@dashkite/generic': 0.5.0
       '@dashkite/joy': 0.7.0
       diffhtml: 1.0.0-beta.30
 
-  '@dashkite/flashdom@0.1.9':
+  '@dashkite/flashdom@0.1.10':
     dependencies:
-      '@dashkite/generic': 0.9.7
+      '@dashkite/generic': 0.9.8
       '@dashkite/joy': 0.11.0
 
   '@dashkite/generic@0.5.0':
     dependencies:
       '@dashkite/joy': 0.5.0
 
-  '@dashkite/generic@0.9.7':
+  '@dashkite/generic@0.9.8':
     dependencies:
       '@dashkite/joy': 0.7.0
 
