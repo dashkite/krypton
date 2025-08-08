@@ -38,11 +38,11 @@
     "@dashkite/genie": "^0.20.13",
     "@dashkite/genie-clean": "^0.13.11",
     "@dashkite/genie-coffee": "^0.13.13",
-    "@dashkite/genie-module": "^0.5.39",
+    "@dashkite/genie-module": "^0.5.40",
     "@dashkite/genie-release": "^0.5.0"
   },
   "dependencies": {
-    "@dashkite/dominator": "^0.1.18",
+    "@dashkite/dominator": "^0.1.19",
     "@dashkite/joy": "^0.11.0"
   }
 }
