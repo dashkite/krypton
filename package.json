@@ -42,7 +42,7 @@
     "@dashkite/genie-release": "^0.4.3"
   },
   "dependencies": {
-    "@dashkite/dominator": "^0.1.16",
+    "@dashkite/dominator": "^0.1.17",
     "@dashkite/joy": "^0.11.0"
   }
 }
