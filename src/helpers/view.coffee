@@ -1,5 +1,4 @@
 import * as Fn from "@dashkite/joy/function"
-import * as DOM from "@dashkite/dominator"
 
 View =
 

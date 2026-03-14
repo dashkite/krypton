@@ -1,6 +1,7 @@
 import * as Fn from "@dashkite/joy/function"
 import * as Time from "@dashkite/joy/time"
-import * as DOM from "@dashkite/dominator"
+import $ from "@dashkite/zest"
+import { flash } from "@dashkite/flashdom"
 
 import Page from "./helpers/page"
 import View from "./helpers/view"
@@ -23,17 +24,18 @@ Krypton =
 
   show: Fn.tee ( context ) ->
     do ({ render, page, view } = context ) ->
-      await DOM.flash "body", render context
-      view.html = DOM.html View.selector view
+      flash "body", render context
+      view.html = ( $ View.selector view ).html
       view.initialized = true
 
 
   event: ( name, handler ) ->
     Fn.tee ({ initializing, view }) ->
       if !view.initialized
-        DOM.listen document.body, name, ( event ) ->
-          if DOM.within ( View.selector view ), event
-            handler event
+        ( $ document )
+          .listen name
+          .within View.selector view
+          .apply handler
 
   success: ( handler ) -> Krypton.event "success", handler
 
@@ -41,7 +43,7 @@ Krypton =
 
   dispose: Fn.tee ({ view, page, initializing }) ->
     if !view.initialized
-      DOM.hide ( View.selector view ), ->
-        Page.remove page, view
+      ( $ View.selector view )
+        .hide -> Page.remove page, view
 
 export default Krypton
