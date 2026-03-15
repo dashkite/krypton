@@ -1,7 +1,6 @@
 import * as Fn from "@dashkite/joy/function"
 import * as Time from "@dashkite/joy/time"
 import $ from "@dashkite/zest"
-import { flash } from "@dashkite/flashdom"
 
 import Page from "./helpers/page"
 import View from "./helpers/view"
@@ -23,11 +22,10 @@ Krypton =
       context
 
   show: Fn.tee ( context ) ->
-    do ({ render, page, view } = context ) ->
-      flash "body", render context
+    do ({ render, view } = context ) ->
+      ( $ "body" ).render render context
       view.html = ( $ View.selector view ).html
       view.initialized = true
-
 
   event: ( name, handler ) ->
     Fn.tee ({ initializing, view }) ->
