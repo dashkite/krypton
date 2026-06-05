@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/krypton",
-  "version": "0.1.28",
+  "version": "0.1.41",
   "description": "Page management helpers for browser apps",
   "keywords": [],
   "homepage": "https://github.com/dashkite/krypton#readme",
@@ -32,6 +32,7 @@
     "release": "genie release"
   },
   "devDependencies": {
+
     "@dashkite/amen": "0.2.2",
     "@dashkite/amen-console": "0.0.2",
     "@dashkite/assert": "0.1.4",
@@ -46,5 +47,6 @@
     "@dashkite/joy": "0.11.0",
     "@dashkite/reactive": "link:../reactive",
     "@dashkite/zest": "link:../zest"
+
   }
 }
