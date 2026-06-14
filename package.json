@@ -38,13 +38,13 @@
     "@dashkite/genie": "0.20.14",
     "@dashkite/genie-clean": "0.13.12",
     "@dashkite/genie-coffee": "0.13.15",
-    "@dashkite/genie-module": "^0.5.60",
+    "@dashkite/genie-module": "^0.5.61",
     "@dashkite/genie-release": "0.5.0"
   },
   "dependencies": {
-    "@dashkite/flashdom": "^0.1.34",
+    "@dashkite/flashdom": "^0.1.35",
     "@dashkite/joy": "0.12.40",
-    "@dashkite/reactive": "^0.7.36",
+    "@dashkite/reactive": "^0.7.37",
     "@dashkite/zest": "link:../zest"
   }
 }
