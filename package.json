@@ -42,9 +42,9 @@
     "@dashkite/genie-release": "0.5.0"
   },
   "dependencies": {
-    "@dashkite/flashdom": "link:../flashdom",
+    "@dashkite/flashdom": "^0.1.32",
     "@dashkite/joy": "0.12.40",
-    "@dashkite/reactive": "link:../reactive",
+    "@dashkite/reactive": "^0.7.34",
     "@dashkite/zest": "link:../zest"
   }
 }
